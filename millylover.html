@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Botão de Amor</title>
+</head>
+<body>
+
+<!-- Botão que acionará a mensagem -->
+<button onclick="exibirMensagemAmor()">Clique aqui</button>
+
+<!-- Elemento onde a mensagem será exibida -->
+<p id="mensagemAmor"></p>
+
+<!-- Script JavaScript -->
+<script>
+  // Função para exibir a mensagem de amor
+  function exibirMensagemAmor() {
+    // Seleciona o elemento pelo ID
+    var elementoMensagem = document.getElementById("mensagemAmor");
+
+    // Define o texto da mensagem
+    var mensagem = "Eu te amo! ❤️";
+
+    // Atribui a mensagem ao conteúdo do elemento
+    elementoMensagem.textContent = mensagem;
+  }
+</script>
+
+</body>
+</html>
