@@ -3,30 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mensagem de Amor</title>
+  <title>Love Message</title>
 </head>
 <body>
 
-<!-- Botão que acionará a mensagem -->
-<button onclick="exibirMensagemAmor()">Clique aqui</button>
+<!-- Button that triggers the love message -->
+<button onclick="showLoveMessage()">Clique aqui</button>
 
-<!-- Elemento onde a mensagem será exibida -->
-<p id="mensagemAmor"></p>
+<!-- Element to display the love message -->
+<p id="loveMessage" style="display:none; color:red; font-size:20px; font-weight:bold;">Eu te AMO!</p>
 
-<!-- Script JavaScript -->
+<!-- JavaScript to show the love message -->
 <script>
-  // Função para exibir a mensagem de amor
-  function exibirMensagemAmor() {
-    // Seleciona o elemento pelo ID
-    var elementoMensagem = document.getElementById("mensagemAmor");
+  function showLoveMessage() {
+    // Select the element by ID
+    var loveMessageElement = document.getElementById("loveMessage");
 
-    // Define o texto da mensagem
-    var mensagem = "Eu te amo! ❤️";
-
-    // Atribui a mensagem ao conteúdo do elemento
-    elementoMensagem.textContent = mensagem;
+    // Display the love message
+    loveMessageElement.style.display = "block";
   }
 </script>
 
 </body>
 </html>
+
